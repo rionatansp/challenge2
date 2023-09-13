@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="91dp">
+
+        <TextView
+            android:id="@+id/textJudul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:text="Hai Stikomers,"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Mau makan apa kamu hari ini?"
+            app:layout_constraintEnd_toEndOf="@+id/textJudul"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textJudul"
+            app:layout_constraintTop_toBottomOf="@+id/textJudul" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user_icon" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView11"
+            app:layout_constraintEnd_toStartOf="@+id/imageView11"
+            app:layout_constraintTop_toTopOf="@+id/imageView11"
+            app:srcCompat="@drawable/shopping_icon" />
+
+        <ImageView
+            android:id="@+id/imageHero"
+            android:layout_width="347dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.468"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textMessage"
+            app:srcCompat="@drawable/spagheti" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="123dp"
+            android:layout_height="79dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toTopOf="@+id/imageHero"
+            app:srcCompat="@drawable/diskon30" />
+
+        <TextView
+            android:id="@+id/diskonTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Diskon 30%"
+            android:textColor="#F4F4F4"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imageView14"
+            app:layout_constraintTop_toTopOf="@+id/imageHero" />
+
+        <TextView
+            android:id="@+id/descriptionHero"
+            android:layout_width="149dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:text="Pesan makanan dengan aplikasi dan dapatkan diskonmu"
+            android:textColor="#F1EBEB"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/diskonTitle"
+            app:layout_constraintHorizontal_bias="0.015"
+            app:layout_constraintStart_toStartOf="@+id/diskonTitle"
+            app:layout_constraintTop_toBottomOf="@+id/diskonTitle" />
+
+        <ImageView
+            android:id="@+id/imgSiomay"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionHero"
+            app:srcCompat="@drawable/siomay" />
+
+        <ImageView
+            android:id="@+id/imgSushi"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toBottomOf="@+id/imageHero"
+            app:srcCompat="@drawable/sushi" />
+
+        <ImageView
+            android:id="@+id/imgFireChicken"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toBottomOf="@+id/imageHero"
+            app:srcCompat="@drawable/spicy_chicken" />
+
+        <ImageView
+            android:id="@+id/imgFrenchFries"
+            android:layout_width="81dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="264dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toBottomOf="@+id/imageHero"
+            app:srcCompat="@drawable/spicy_chicken"
+            tools:srcCompat="@drawable/frenchfries" />
+
+        <TextView
+            android:id="@+id/textSiomay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Siomay"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imgSiomay"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/imgSiomay"
+            app:layout_constraintTop_toBottomOf="@+id/imgSiomay" />
+
+        <TextView
+            android:id="@+id/textSushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sushi"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imgSushi"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintStart_toStartOf="@+id/imgSushi"
+            app:layout_constraintTop_toBottomOf="@+id/imgSushi" />
+
+        <TextView
+            android:id="@+id/textFireChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Fire Chicken"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imgFireChicken"
+            app:layout_constraintStart_toStartOf="@+id/imgFireChicken"
+            app:layout_constraintTop_toBottomOf="@+id/imgFireChicken" />
+
+        <TextView
+            android:id="@+id/textFrenchFries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="French Fries"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imgFrenchFries"
+            app:layout_constraintStart_toStartOf="@+id/imgFrenchFries"
+            app:layout_constraintTop_toBottomOf="@+id/imgFrenchFries" />
+
+        <TextView
+            android:id="@+id/textListMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:text="List Menu Makanan"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageHero"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toBottomOf="@+id/imageHero" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageHero"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/textListMenu"
+            app:layout_constraintTop_toBottomOf="@+id/imageHero"
+            app:srcCompat="@drawable/health_data" />
+
+        <ImageView
+            android:id="@+id/imgSiomayCard"
+            android:layout_width="166dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="176dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imageHero"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageHero"
+            app:layout_constraintTop_toBottomOf="@+id/imageHero"
+            app:srcCompat="@drawable/siomay" />
+
+        <ImageView
+            android:id="@+id/imgSushiCard"
+            android:layout_width="166dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imgSiomayCard"
+            app:layout_constraintStart_toEndOf="@+id/imgSiomayCard"
+            app:layout_constraintTop_toTopOf="@+id/imgSiomayCard"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/sushi" />
+
+        <ImageView
+            android:id="@+id/imgFireChickenCard"
+            android:layout_width="166dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="52dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@+id/imgSiomayCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imgSiomayCard"
+            app:layout_constraintTop_toBottomOf="@+id/imgSiomayCard"
+            app:srcCompat="@drawable/spicy_chicken" />
+
+        <ImageView
+            android:id="@+id/imgFrenchFriesCard"
+            android:layout_width="166dp"
+            android:layout_height="125dp"
+            android:layout_marginStart="12dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/imgFireChickenCard"
+            app:layout_constraintStart_toEndOf="@+id/imgFireChickenCard"
+            app:layout_constraintTop_toTopOf="@+id/imgFireChickenCard"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/frenchfries" />
+
+        <TextView
+            android:id="@+id/textSiomayCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Siomay"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imgSiomayCard"
+            app:layout_constraintTop_toBottomOf="@+id/imgSiomayCard" />
+
+        <TextView
+            android:id="@+id/textSushiCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sushi"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imgSushiCard"
+            app:layout_constraintTop_toBottomOf="@+id/imgSushiCard" />
+
+        <TextView
+            android:id="@+id/textFireChickenCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Fire Chicken"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imgFireChickenCard"
+            app:layout_constraintTop_toBottomOf="@+id/imgFireChickenCard" />
+
+        <TextView
+            android:id="@+id/textFrenchFriesCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="French Fries"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imgFrenchFriesCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imgFrenchFriesCard"
+            app:layout_constraintTop_toBottomOf="@+id/imgFrenchFriesCard" />
+
+        <TextView
+            android:id="@+id/priceSiomay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Rp 28.000"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textSiomayCard"
+            app:layout_constraintStart_toStartOf="@+id/textSiomayCard"
+            app:layout_constraintTop_toBottomOf="@+id/textSiomayCard" />
+
+        <TextView
+            android:id="@+id/priceSushi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rp 25.000"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textSushiCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textSushiCard"
+            app:layout_constraintTop_toBottomOf="@+id/textSushiCard" />
+
+        <TextView
+            android:id="@+id/priceFireChicken"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Rp 30.000"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textFireChickenCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textFireChickenCard"
+            app:layout_constraintTop_toBottomOf="@+id/textFireChickenCard" />
+
+        <TextView
+            android:id="@+id/priceFrenchFries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="Rp 20.000"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/textFrenchFriesCard"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textFrenchFriesCard"
+            app:layout_constraintTop_toBottomOf="@+id/textFrenchFriesCard" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
